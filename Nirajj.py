@@ -1,4 +1,4 @@
-#script by @NIRAJDSP
+#script by @black_devilyt
 
 import telebot
 import subprocess
@@ -8,10 +8,10 @@ import os
 from keep_alive import keep_alive
 keep_alive()
 # insert your Telegram bot token here
-bot = telebot.TeleBot('7433469650:AAFSSHu7X7SmsZXTbaDH6DH-Ag_pOeIVXUg')
+bot = telebot.TeleBot('7340756576:AAERbpccB73IxtxOhfOZJJd1RxvZEZjVX4c')
 
 # Admin user IDs
-admin_id = ["6701861445"]
+admin_id = ["969452944"]
 
 # File to store allowed user IDs
 USER_FILE = "users.txt"
@@ -48,7 +48,7 @@ allowed_user_ids = read_users()
 
 # Function to log command to the file
 def log_command(user_id, target, port, time):
-    admin_id = ["6701861445"]
+    admin_id = ["969452944"]
     user_info = bot.get_chat(user_id)
     if user_info.username:
         username = "@" + user_info.username
@@ -153,7 +153,7 @@ def add_user(message):
         else:
             response = "Please specify a user ID and the duration (e.g., 1hour, 2days, 3weeks, 4months) to add 😘."
     else:
-        response = "You have not purchased yet purchase now from:- @NIRAJDSP."
+        response = "You have not purchased yet purchase now from:- @black_devilyt."
 
     bot.reply_to(message, response)
 
@@ -189,7 +189,7 @@ def remove_user(message):
             response = '''Please Specify A User ID to Remove. 
 ✅ Usage: /remove <userid>'''
     else:
-        response = "You have not purchased yet purchase now from:- @NIRAJDSP 🥰."
+        response = "You have not purchased yet purchase now from:- @black_devilyt 🥰."
 
     bot.reply_to(message, response)
 
@@ -208,7 +208,7 @@ def clear_logs_command(message):
         except FileNotFoundError:
             response = "Logs are already cleared ❌."
     else:
-        response = "You have not purchased yet purchase now from :- @NIRAJDSP ❄."
+        response = "You have not purchased yet purchase now from :- @black_devilyt ❄."
     bot.reply_to(message, response)
 
 
@@ -227,7 +227,7 @@ def clear_users_command(message):
         except FileNotFoundError:
             response = "users are already cleared ❌."
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @NIRAJDSP 😎."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @black_devilyt 😎."
     bot.reply_to(message, response)
  
 
@@ -252,7 +252,7 @@ def show_all_users(message):
         except FileNotFoundError:
             response = "No data found ❌"
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @NIRAJDSP ❄."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @black_devilyt ❄."
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['logs'])
@@ -270,7 +270,7 @@ def show_recent_logs(message):
             response = "No data found ❌"
             bot.reply_to(message, response)
     else:
-        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @NIRAJDSP."
+        response = "ꜰʀᴇᴇ ᴋᴇ ᴅʜᴀʀᴍ ꜱʜᴀʟᴀ ʜᴀɪ ᴋʏᴀ ᴊᴏ ᴍᴜ ᴜᴛᴛʜᴀ ᴋᴀɪ ᴋʜɪ ʙʜɪ ɢᴜꜱ ʀʜᴀɪ ʜᴏ ʙᴜʏ ᴋʀᴏ ꜰʀᴇᴇ ᴍᴀɪ ᴋᴜᴄʜ ɴʜɪ ᴍɪʟᴛᴀ ʙᴜʏ:- @black_devilyt."
         bot.reply_to(message, response)
 
 
@@ -320,7 +320,7 @@ def handle_bgmi(message):
         else:
             response = "✅ Usage :- /bgmi <target> <port> <time>"  # Updated command syntax
     else:
-        response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /bgmi command. DM TO BUY key ACCESS:- @NIRAJDSP")
+        response = ("🚫 Unauthorized Access! 🚫\n\nOops! It seems like you don't have permission to use the /bgmi command. DM TO BUY key ACCESS:- @black_devilyt")
 
     bot.reply_to(message, response)
 
@@ -357,8 +357,8 @@ def show_help(message):
 🤖 To See Admin Commands:
 💥 /admincmd : Shows All Admin Commands.
 
-𝐁𝐮𝐲 𝐟𝐫𝐨𝐦 :- @NIRAJDSP
-Official Channel :- https://t.me/Niraj_VIP_official2
+𝐁𝐮𝐲 𝐟𝐫𝐨𝐦 :- @black_devilyt
+Official Channel :- https://t.me/DeViL_Store_0fficial
 '''
     for handler in bot.message_handlers:
         if hasattr(handler, 'commands'):
@@ -375,7 +375,7 @@ def welcome_start(message):
     user_name = message.from_user.first_name
     response = f'''❄️ᴡᴇʟᴄᴏᴍᴇ ᴛᴏ ᴘʀᴇᴍɪᴜᴍ ᴅᴅᴏs ʙᴏᴛ, {user_name}! ᴛʜɪs ɪs ʜɪɢʜ ǫᴜᴀʟɪᴛʏ sᴇʀᴠᴇʀ ʙᴀsᴇᴅ ᴅᴅᴏs. ᴛᴏ ɢᴇᴛ ᴀᴄᴄᴇss.
 🤖Try To Run This Command : /help 
-✅BUY :- @NIRAJDSP'''
+✅BUY :- @black_devilyt'''
     bot.reply_to(message, response)
 
 @bot.message_handler(commands=['rules'])
@@ -385,7 +385,7 @@ def welcome_rules(message):
 
 1. Dont Run Too Many Attacks !! Cause A Ban From Bot
 2. Dont Run 2 Attacks At Same Time Becz If U Then U Got Banned From Bot.
-3. MAKE SURE YOU JOINED  https://t.me/Niraj_VIP_official2 OTHERWISE NOT WORK
+3. MAKE SURE YOU JOINED  https://t.me/DeViL_Store_0fficial OTHERWISE NOT WORK
 4. We Daily Checks The Logs So Follow these rules to avoid Ban!!'''
     bot.reply_to(message, response)
 
@@ -400,9 +400,9 @@ Vip 🌟 :
 -> Concurrents Attack : 5
 
 Pr-ice List💸 :
-Day-->80 Rs
-Week-->400 Rs
-Month-->1000 Rs
+Day-->100 Rs
+Week-->500 Rs
+Month-->12000 Rs
 '''
     bot.reply_to(message, response)
 
